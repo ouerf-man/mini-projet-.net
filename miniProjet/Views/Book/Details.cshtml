@@ -1,0 +1,42 @@
+﻿@model miniProjet.Models.Book
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="container-fluid">
+    <h1 class="mt-4">Books</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item active">Details</li>
+    </ol>
+</div>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReleaseDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReleaseDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Director)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Director)
+        </dd>
+
+    </dl>
+</div>
